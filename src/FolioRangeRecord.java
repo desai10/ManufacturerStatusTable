@@ -14,9 +14,10 @@ public class FolioRangeRecord {
         return this.range.isContainsRange(record.range);
     }
 
-    public String convertRecord2String(FolioRangeRecord record){
-        return new String();
-        // format is "A\tB\tS\tT"
+    public String convertRecord2String(){
+        return new String(Integer.toString(this.range.start) + " " + Integer.toString(this.range.end)
+                + " " + this.statusCode + Integer.toString(this.transferCode));
+        // format is "A B S T"
     }
 
 

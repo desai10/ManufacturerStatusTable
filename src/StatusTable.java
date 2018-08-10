@@ -9,8 +9,9 @@ public class StatusTable {
     }
 
     public void printTable(){
-        //call record.convertRecord2String
-    }
+        for(int i=0;i<statusTableList.size();i++)
+            System.out.println(statusTableList.get(i).convertRecord2String());
+        }
 
     public void refineStatusTable(){
         //sort it and check all the test cases
